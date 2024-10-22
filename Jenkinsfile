@@ -6,7 +6,7 @@
             steps {
                 script {
                     withDockerRegistry(credentialsId: 'docker-cred', toolName: 'docker') {
-                        sh "docker build -t adijaiswal/frontend:latest ."
+                        sh "docker build -t arunjk006/frontend:latest ."
                     }
                 }
             }
@@ -16,7 +16,7 @@
             steps {
                 script {
                     withDockerRegistry(credentialsId: 'docker-cred', toolName: 'docker') {
-                        sh "docker push adijaiswal/frontend:latest"
+                        sh "docker push arunjk006/frontend:latest"
                     }
                 }
             }
